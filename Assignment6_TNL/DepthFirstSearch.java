@@ -5,9 +5,17 @@ public class DepthFirstSearch {
        int rightHeight = 0;
        int leftHeight = 0;
        int totalHeight = 0;
+       /**
+        * Print "Call DFS with root node to do a Depth First Search."
+        */
        public DepthFirstSearch() {
     	   System.out.println("Call DFS with root node to do a Depth First Search.");
        }
+       
+       /**
+        * Goes through the tree and print its data values
+        * @param node the node to get its data values and to check its children
+        */
        public void DFS(Node node) {
     	   System.out.println(node.getData());
     	   traverse++;
@@ -32,6 +40,11 @@ public class DepthFirstSearch {
     		   }
     	   }
        }
+       
+       /**
+        * Goes through the tree and print its data values, number of traverses, and its height
+        * @param node the node to get its data values and to check its children
+        */
        public void treeStats(Node node) {
     	   if (traverse != 0) traverse = 0;
     	   if (totalHeight != 0) totalHeight = 0;
