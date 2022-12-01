@@ -6,7 +6,6 @@ public class Node {
 	private int data;
 	private Node lChild;
 	private Node rChild;
-	private int height;
 	
 	public Node(int data) {
 		lChild = null;
@@ -55,17 +54,4 @@ public class Node {
 		this.rChild = rChild;
 	}
 	
-	/**
-	 * @param height the height of the node
-	 */
-	public void setHeight(int height) {
-		this.height = height;
-	}
-	
-	/**
-	 * @return the height
-	 */
-	public int getHeight() {
-		return height;
-	}
 }
